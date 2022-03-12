@@ -1,0 +1,289 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body{
+   font-size: 1.2rem;
+   line-height: 1.6;
+   padding: 1.2em;
+   font-family: Arial, Helvetica, sans-serif;
+   background-color: #f5f5f5;
+}
+
+.container{
+   width: 760px;
+   max-width: 90%;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   padding: 1em 2em;
+   background-color: #fff;
+   border: 1px solid rgb(51, 49, 49);
+   border-radius: 1em;
+   box-shadow: 2px 5px 4px rgb(51, 49, 49, 0.3);
+}
+
+#title{
+   text-align: center;
+   font-size: 1.8rem;
+   margin-bottom: 1.1em;
+}
+
+#description{
+   font-size: 1.5rem;
+   text-align: justify;
+   margin-bottom: 1em;
+   opacity: 0.6;
+}
+
+h3{
+   font-size: 1.3rem;
+   margin-bottom: 1.3em;
+   font-weight: 700;
+}
+
+.radio-area{
+   width: 90%;
+   margin-bottom: 1em;
+   margin-left: 0;
+}
+
+.radio-area label{
+   font-size: 1.3rem;
+}
+
+.radio-area input[type=radio]{
+   width: 30px;
+   height: 20px;
+   margin-left: 0;
+}
+
+.personal-info{
+   width: 100%;
+   margin-bottom: 1.6em;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.personal-info label{
+   font-size: 1.3rem;
+   font-family: inherit;
+}
+
+.personal-info input{
+   width: 250px;
+   font-size: inherit;
+   font-family: inherit;
+   padding: 0.3em;
+   margin-left: 0.3em;
+   margin-right: 0.8em;
+   border-radius: 5px;
+}
+
+.number-area{
+   margin-bottom: 1.5em;
+}
+
+.number-area label{
+   font-size: 1.3rem;
+}
+
+.number-area input{
+   width: 240px;
+   padding: 0.3em;
+   font-size: inherit;
+   border-radius: 5px;
+}
+
+.credit-info{
+   margin-bottom: 2rem;
+   font-size: 1.3rem;
+}
+
+.credit-info #credit{
+   width: 150px;
+   padding: 0.3em;
+   font-size: inherit;
+   border-radius: 5px;
+}
+
+.checkbox-area{
+   margin-bottom: 1.2em;
+   font-size: 1.3rem;
+}
+
+.checkbox-area input{
+   margin-left: 0.8em;
+}
+
+.checkbox-area label{
+   font-size: inherit;
+}
+
+.text-area{
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 1.5em;
+}
+
+.text-area label{
+   font-size: 1.3rem;
+   font-weight: 700;
+}
+
+.text-area textarea{
+   padding: 0.5em;
+   font-size: inherit;
+}
+
+#submit{
+   display: block;
+   width: 200px;
+   padding: 0.8em  2em;
+   font-size: 1.3rem;
+   text-transform: uppercase;
+   font-weight: 700;
+   border: 1px solid rgb(41, 40, 40);
+   color: #000;
+   border-radius: 0.5em;
+   margin-bottom: 1.2em;
+}
+
+#submit:hover,
+#submit:focus{
+   background-color: rgb(68, 67, 67);
+   color: #fff;
+   border: 2px solid orangered;
+}
+
+@media  only screen and (max-width : 760px){
+     .container{
+      max-width: 100%;
+     }
+
+     #title{
+    font-size: 1.5rem;
+   }
+
+   #description{
+      font-size: 1.2rem;
+      margin-bottom: 1.5em;
+   }
+   
+   h3{
+      font-size: 1rem;
+      text-align: center;
+   }
+   
+   .radio-area{
+      margin: 0 auto;
+      text-align: center;
+      margin-bottom: 1.5em;
+   }
+   
+   .radio-area label{
+      font-size: 1.2rem;
+      margin: 1em;
+      font-weight: 700;
+   }
+   
+   .radio-area input[type=radio]{
+      width: 30px;
+      height: 20px;
+      margin-left: 0;
+   }
+   
+   .personal-info{
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 1.5em;
+      flex-direction: column;
+      align-items: center;
+   }
+   
+   .personal-info label{
+      font-size: 1.2rem;
+      font-family: inherit;
+      font-weight: 700;
+   }
+   
+   .personal-info input{
+      width: 90%;
+      margin-bottom: 0.8em;
+   }
+   
+   .number-area{
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1.6em;
+      align-items: center;
+   }
+   
+   .number-area label{
+      font-size: 1.3rem;
+      font-weight: 700;
+   }
+   
+   .number-area input{
+      width: 90%;
+      text-align: center;
+   }
+   
+   .credit-info{
+      font-size: 1.2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+   }
+
+   .credit-info label{
+      font-weight: 700;
+   }
+   
+   .credit-info #credit{
+      width: 90%;
+      text-align: center;
+   }
+   
+   .checkbox-area{
+      font-size: 1.3rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+   
+   .checkbox-area input{
+      margin-left: 0.8em;
+      margin-bottom: 0.5em;
+      width: 100px;
+   }
+   
+   .checkbox-area label{
+      font-size: inherit;
+   }
+   
+   .text-area{
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1.5em;
+   }
+   
+   .text-area label{
+      font-size: 1.3rem;
+      font-weight: 700;
+      text-align: center;
+   }
+   
+   .text-area textarea{
+      padding: 0.5em;
+      font-size: inherit;
+   }
+   
+   #submit{
+      width: 90%;
+   }
+   
+}
